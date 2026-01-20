@@ -1,0 +1,8 @@
+git init инициализирует репозиторий
+git add -A делает неотслеживаемый файл отслеживаемым
+git commit -m "113213"  создает коммит 
+git config --global user.name "name" устанавливает имя пользователя ддя всех репозиториев в системе
+git config --global user.email "email" тоже самое с почтой
+git remote add origin запись об удаленном репозитории
+git push -u origin main отправляет изменения репозитория
+ 
