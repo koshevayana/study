@@ -53,3 +53,29 @@ print(rect.area())
 print(rect.perimeter())
 print(rect.diagonal())
 rect.draw()
+
+
+class Kg_to_ft:
+    def __init__(self, kg):
+        self.kg = kg
+        self.valid_kg(kg)
+
+    @classmethod
+    def valid_kg(cls, kg):
+        if not isinstance(kg,float) and not isinstance(kg,int):
+            raise TypeError ("Килограммы задаются только числом")
+
+    def get_kg(self):
+        return self.kg
+    def set_kg(self, kg):
+        self.kg = kg
+
+    def to_ft(self, suf=2.205):
+        return self.kg*suf
+
+kg1=Kg_to_ft(12)
+kg2=Kg_to_ft(41)
+kg3=Kg_to_ft("42")
+print(kg1.to_ft())
+print(kg2.to_ft())
+print(kg3.to_ft())
